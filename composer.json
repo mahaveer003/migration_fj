@@ -1,0 +1,14 @@
+{
+  "name": "drupal/migration_fj",
+  "type": "drupal-module",
+  "description": "My Awesome Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/migration_fj",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/migration_fj",
+    "source": "http://cgit.drupalcode.org/migration_fj"
+  },
+  "require": { }
+}

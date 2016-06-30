@@ -1,0 +1,7 @@
+id: fj
+label: fj Imports
+description: A few simple fj-related imports, to demonstrate how to implement migrations.
+source_type: Custom database
+shared_configuration:
+  source:
+    key: db_migration

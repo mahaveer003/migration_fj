@@ -1,0 +1,20 @@
+id: fj_content
+label: Migrate content from the source database.
+migration_group: fj
+source:
+  plugin: fj_content
+  target: db_migration
+destination:
+  plugin: entity:node
+process:
+  type:
+    plugin: default_value
+    default_value: article
+  title: title
+  uid:
+    plugin: default_value
+    default_value: 1
+  status:
+    plugin: default_value
+    default_value: 0
+migration_dependencies: {  }

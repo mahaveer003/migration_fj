@@ -1,0 +1,18 @@
+id: fj_term
+label: Migrate categories from the source database to taxonomy terms
+migration_group: fj
+source:
+  plugin: fj_term
+  target: db_migration
+destination:
+  plugin: entity:taxonomy_term
+process:
+  vid:
+    plugin: default_value
+    default_value: category
+  name: category
+  parent:
+      plugin: migration
+      migration: fj_term
+      source: category_parent
+migration_dependencies: {}

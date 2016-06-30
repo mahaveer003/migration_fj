@@ -1,0 +1,24 @@
+id: csv_file
+label: CSV file migration
+migration_group: fj
+migration_tags:
+  - CSV
+source:
+  plugin: csv
+  path: public://csv/people.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    0:
+      id: Identifier
+    1:
+      first_name: First Name
+destination:
+  plugin: entity:node
+process:
+  type:
+    plugin: default_value
+    default_value: article
+  title: first_name
+migration_dependencies: {  }
