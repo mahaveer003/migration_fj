@@ -12,7 +12,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
  */
 function migration_fj_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    // Main module help for the migration_fj module for test.
+    // Main module help for migration_fj module for test.
     case 'help.page.migration_fj':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
