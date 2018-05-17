@@ -16,7 +16,7 @@ function migration_fj_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.migration_fj':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      $output .= '<p>' . t('Awesome Module') . '</p>';
       return $output;
 
     default:
